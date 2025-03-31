@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--font-Red-hat: "Red Hat Display";
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--font-Red-hat);
+    background-color: var(--Pale-blue)
+    /* background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat; */
+}
+
+.ctn-card {
+    width: 330px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 22px;
+    overflow: hidden;
+    background-color: var(--Very-pale-blue);
+    box-shadow: 5px 18px 30px rgba(0, 0, 0, 0.095);
+    
+}
+.ctn-card > img {
+    margin-bottom: 30px;
+}
+
+.ctn-card h2 {
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-bottom: 20px;
+
+}
+.ctn-cart-text {
+    text-align: center;
+    color: var(--Desaturated-blue);
+    line-height: 25px;
+    width: 260px;
+    margin-bottom: 20px;
+    
+}
+
+.annual-plan-ctn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.025);
+    width: 265px;
+    border-radius: 12px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.plan-ctn {
+    display: flex;
+    flex-direction: column;
+}
+
+.annual-plan {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--Dark-blue);
+}
+.value-plan {
+    color: var(--Desaturated-blue);
+    font-size: 14px;
+    font-weight: 700;
+}
+.annual-plan-ctn > p {
+    color: var(--Bright-blue);
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 800;
+}
+.annual-plan-ctn > p:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ctn-card button {
+    border: none;
+    width: 80%;
+    height: 8%;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 30px var(--Desaturated-blue);
+    cursor: pointer;
+}
+.ctn-card button:hover {
+    background-color: var(--Desaturated-blue);
+}
+.cancel-order {
+    font-weight: 900;
+    cursor: pointer;
+    color: var(--Desaturated-blue);
+    
+}
+.cancel-order:hover {
+    color: var(--Dark-blue);
+    
+}
