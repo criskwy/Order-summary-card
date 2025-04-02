@@ -24,7 +24,7 @@ body {
     background-color: var(--Pale-blue);
     background-image: url("./images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 50%;
     background-attachment: fixed;
     font-size: 15px;
     width: 100%;
@@ -76,7 +76,11 @@ body {
     padding: 16px 0;
     margin-bottom: 20px;
 }
-
+.annual-plan-ctn-img-plan{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 .plan-ctn {
     display: flex;
     flex-direction: column;
@@ -97,6 +101,7 @@ body {
     font-size: 1rem;
     text-decoration: underline;
     font-weight: 800;
+    
 }
 .annual-plan-ctn > p:hover {
     cursor: pointer;
